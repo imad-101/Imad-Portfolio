@@ -63,12 +63,12 @@ export default async function BlogDetailPage({ params }: PageProps) {
                 </div>
             </article>
         )
-    } catch (error) {
+    } catch {
         return (
             <div className='w-full mt-40 flex flex-col items-center pb-8'>
                 <div className='text-center'>
                     <h1 className='text-2xl font-bold mb-4'>Blog Not Found</h1>
-                    <p className='text-gray-600 dark:text-gray-400'>The blog post you're looking for doesn't exist or couldn't be loaded.</p>
+                    <p className='text-gray-600 dark:text-gray-400'>The blog post you&apos;re looking for doesn&apos;t exist or couldn&apos;t be loaded.</p>
                 </div>
             </div>
         )
