@@ -1,10 +1,13 @@
-import { PrismaClient } from "@prisma/client";
+import { prisma } from '@/lib/prisma'
 import { notFound } from 'next/navigation'
-
-const prisma = new PrismaClient();
 
 export async function getBlog(blogId: string) {
     try {
+        // Check if database is available
+        if (!process.env.POSTGRES_PRISMA_URL) {
+            throw new Error('Database not configured')
+        }
+
         const blog = await prisma.blog.findUnique({
             where: { id: blogId },
             select: {
