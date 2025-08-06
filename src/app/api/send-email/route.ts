@@ -14,6 +14,14 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    // Check if Resend is configured
+    if (!resend) {
+      return NextResponse.json(
+        { success: false, message: 'Email service is not configured. Please contact the administrator.' },
+        { status: 503 }
+      );
+    }
+
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { data, error } = await resend.emails.send({
       from: 'Fardeen <onboarding@resend.dev>',
