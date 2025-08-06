@@ -21,7 +21,7 @@ const Contact = () => {
     const [isEmailSending, setIsEmailSending] = useState<boolean>(false)
 
     const validateEmail = (email: string) => {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailRegex = /^^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     }
 
@@ -57,7 +57,7 @@ const Contact = () => {
     };
 
     return (
-        <div className='w-full px-64 max-[1285px]:px-52 max-lg:px-4 max-sm:px-2 flex flex-col items-center mt-6 pb-8'>
+        <div className='w-full px-[23rem] max-[1100px]:px-52 max-lg:px-4 max-sm:px-2 flex flex-col items-center mt-6 pb-8'>
             <Title title='Get in Touch' />
 
             <div className={`w-full flex flex-col gap-3 mt-6 px-36 max-sm:px-4 ${bricolage_grotesque}`}>

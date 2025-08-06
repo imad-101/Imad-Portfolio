@@ -91,7 +91,6 @@ const data: I_About[] = [
         events: [
             "Dove deep into Web Development, mastered cutting-edge technologies and builded more the 20 projects. 🚀",
             "Started my journey in Web3 development, creating decentralized applications and embracing blockchain technology. ⛓",
-            "Got funded by Adobe for an project and Proud of the progress I've made so far—each step has been a leap forward in my career."
         ]
     },
     {

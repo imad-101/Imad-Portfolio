@@ -13,7 +13,7 @@ const MaxProjectCard = () => {
         <>
             {
                 data.map((project, idx) => (
-                    <MagicCard key={idx} gradientColor={`${isDarkMode ? '#262626' : 'rgba(197, 241, 241, 0.4)'}`} className='w-[68%] h-fit max-lg:w-[45%] max-sm:w-full flex justify-center max-lg:justify-start !bg-transparent cursor-pointer mt-5 rounded-lg dark:shadow-2xl'>
+                    <MagicCard key={idx} gradientColor={`${isDarkMode ? '#262626' : 'rgba(197, 241, 241, 0.4)'}`} className='w-[68%] h-fit max-lg:w-[45%] max-sm:w-full flex justify-center max-lg:justify-start !bg-transparent cursor-pointer rounded-lg dark:shadow-2xl'>
                         <ShineBorder color={["#FF9933", "#FFFFFF", "#138808"]} className='w-[44.5vw] max-[1285px]:w-full max-sm:w-full h-full !bg-transparent !pointer-events-none flex items-center max-lg:flex-col max-lg:items-start pl-2 pr-5 py-5 max-sm:py-5 md:shadow-xl space-x-4'>
 
                             <div className="w-[5vw] max-[1285px]:w-[13vw]">

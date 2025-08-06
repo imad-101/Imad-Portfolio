@@ -6,7 +6,6 @@ import DarkModeProvider from "@/context/DarkModeContext";
 import { Toaster } from "sonner";
 import { Analytics } from '@vercel/analytics/react';
 import './globals.css'
-import ConditionalFooter from "./ConditionalFooter";
 import Provider from "@/context/Provider";
 
 export const metadata: Metadata = {
@@ -51,7 +50,6 @@ export default function RootLayout({
               <Navbar />
               {children}
               <Analytics />
-              <ConditionalFooter />
             </Theme>
           </body>
         </DarkModeProvider>

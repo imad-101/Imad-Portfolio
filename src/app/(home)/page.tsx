@@ -1,9 +1,8 @@
 import Skills from "@/components/Skills"
 import Experience from "@/components/Experience"
 import Education from "@/components/Education"
+// import AboutMe from "@/components/AboutMe"
 import Contact from "@/components/Contact"
-import GitGraph from "./components/GitGraph"
-import AddOnProjects from "@/components/AddOnProjects"
 import HomeRouteBlogs from "@/components/HomeRouteBlogs"
 import InitialLanding from "./components/InitialLanding"
 
@@ -16,15 +15,13 @@ export default function Home() {
         <HomeRouteBlogs />
       </div>
 
-      <div className="w-full flex justify-center">
-        <AddOnProjects />
-      </div>
-
       <div className="w-full flex justify-center mt-8">
         <Experience />
       </div>
 
-      <GitGraph />
+      {/* <div className="w-full flex justify-center mt-12">
+        <AboutMe />
+      </div> */}
 
       <div className="w-full flex justify-center mt-12">
         <Skills />
