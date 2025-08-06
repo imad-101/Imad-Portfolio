@@ -1,7 +1,7 @@
 "use client"
 import { aboutMeData } from "@/utils/constant";
 import Title from "./ui/Title";
-import { bricolage_grotesque, inter } from "@/utils/fonts";
+import {  inter } from "@/utils/fonts";
 
 const AboutMe = () => {
     return (

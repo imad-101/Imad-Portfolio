@@ -1,5 +1,4 @@
 "use client"
-import Experience from "@/components/Experience"
 import { motion } from "framer-motion"
 import HeroSection from "@/components/HeroSection"
 import ProjectCardList from "@/app/projects/components/ProjectCardList"
