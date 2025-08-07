@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import BlogManageList from './components/BlogManageList'
 import BlogSkeleton from '../components/BlogSkeleton'
 import { getServerSession } from "next-auth/next"
-import { authOptions } from "@/app/api/auth/[...nextauth]/route"
+import { authOptions } from "@/lib/auth"
 import { redirect } from 'next/navigation'
 
 export default async function BlogManagePage() {
