@@ -65,13 +65,13 @@ const Contact = () => {
                     <h2 className='text-lg max-sm:text-base'>Have a Question? Let&apos;s Chat!</h2>
                 </div>
                 <div className='flex gap-3 mt-2'>
-                    <Link href="https://cal.com/fardeen26/15min" target="_blank">
+                    <Link href="https://cal.com/imad-uddin/15min" target="_blank">
                         <button className='bg-[#4ADE80] text-black py-2 px-3 rounded-md flex items-center gap-2 text-sm max-sm:text-xs hover:bg-[#42bc6f]'>
                             <SiLivechat className='h-[18px] w-[18px]' /> Book a meet
                         </button>
                     </Link>
 
-                    <Link href="https://twitter.com/messages/compose?recipient_id=1596464580753911810" target="_blank">
+                    <Link href="https://www.x.com/imad_codes" target="_blank">
                         <button className='bg-[#1D9BF0] text-white py-2 px-3 rounded-md flex items-center gap-2 text-sm max-sm:text-xs hover:bg-[#2e7bae]'>
                             <FaXTwitter className='h-[18px] w-[18px]' /> Chat on Twitter
                         </button>

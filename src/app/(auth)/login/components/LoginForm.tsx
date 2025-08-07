@@ -32,15 +32,15 @@ export default function LoginForm() {
                 } else {
                     toast.error(result.error)
                 }
-            }
-
-            if (result?.url) {
+            } else if (result?.ok) {
+                // Login successful
                 toast.success('Login Successful :)')
-                router.replace('/blogs/add');
+                router.replace('/blogs/manage');
             }
 
         } catch (error) {
-            throw new Error((error as Error).message);
+            toast.error('An error occurred during login')
+            console.error('Login error:', error)
         } finally {
             setIsLoading(false)
         }

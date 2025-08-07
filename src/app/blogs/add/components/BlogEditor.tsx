@@ -265,15 +265,16 @@ const MenuBar = ({ editor }: MenuBarProps) => {
 
 type BlogEditorProps = {
     setContent: (content: string) => void;
+    initialContent?: string;
 };
 
-export default function BlogEditor({ setContent }: BlogEditorProps) {
+export default function BlogEditor({ setContent, initialContent }: BlogEditorProps) {
     const editor = useEditor({
         extensions: [
             StarterKit,
             Image
         ],
-        content: "Start writing here...",
+        content: initialContent || "Start writing here...",
         onUpdate: ({ editor }) => {
             setContent(editor.getHTML())
         },

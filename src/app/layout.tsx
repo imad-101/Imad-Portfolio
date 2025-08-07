@@ -9,12 +9,12 @@ import './globals.css'
 import Provider from "@/context/Provider";
 
 export const metadata: Metadata = {
-  title: "fardeen",
+  title: "Imad Uddin | Portfolio",
   description: "Fardeen Mansoori is a Full Stack Developer specializing in building impactful web applications from scratch. Explore his portfolio to see my projects and skills.",
   keywords: "Fardeen Mansoori, Full Stack Developer, Web Developer, Portfolio, JavaScript, TypeScript, React, Node.js, software engineer",
   authors: [{ name: "Fardeen Mansoori" }],
   openGraph: {
-    title: "fardeen",
+    title: "Imad Uddin | Portfolio",
     description: "",
     url: "https://fardeen.tech",
     siteName: "fardeen",
@@ -42,18 +42,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Provider>
-        <DarkModeProvider>
-          <body className={`bg-white dark:bg-black`}>
+      <body className={`bg-white dark:bg-black`}>
+        <Provider>
+          <DarkModeProvider>
             <Toaster position='bottom-right' />
             <Theme className="dark:!bg-black">
               <Navbar />
               {children}
               <Analytics />
             </Theme>
-          </body>
-        </DarkModeProvider>
-      </Provider>
+          </DarkModeProvider>
+        </Provider>
+      </body>
     </html>
   );
 }

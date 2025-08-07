@@ -2,34 +2,34 @@ import { I_Education, I_Experience } from "@/types/project";
 
 export const experienceData: I_Experience[] = [
       {
-        company_link: "https://x.com/fardeentwt",
+        company_link: "https://x.com/imad_codes",
         company_logo: "/fast.png",
         company_name: "Learning AI/ML through fast.ai practical deep learning course",
-        duration: "2024 - present",
+        duration: "July 2025 - present",
         job_title: "Learning AI/ML",
         description: ""
     },
     {
-        company_link: "https://x.com/fardeentwt",
+        company_link: "https://x.com/imad_codes",
         company_logo: "/freelance-icon.webp",
         company_name: "building and shipping MVPs and SaaS apps for startups and individuals",
-        duration: "2024 - present",
+        duration: "Jan 2025 - present",
         job_title: "Freelancing",
         description: ""
     },
     {
-        company_link: "https://x.com/fardeentwt",
+        company_link: "https://x.com/imad_codes",
         company_logo: "/indie.png",
         company_name: "Making apps and websites and monetizing them with subscription and paid ads",
-        duration: "Feb 2024 - June 2024",
+        duration: "Dec 2024 - present",
         job_title: "Indie Hacking | Making SaaS Apps",
         description: ""
     },
     {
-        company_link: "https://x.com/",
+        company_link: "https://x.com/imad_codes",
         company_logo: "/odin.png",
         company_name: "Started learning full-stack through the Odin Project in JS",
-        duration: "Feb 2024 - June 2024",
+        duration: "June 2024 - Dec 2025",
         job_title: "Learning Full-Stack Develolopment",
         description: ""
     },
@@ -45,7 +45,7 @@ export const experienceData: I_Experience[] = [
         company_link: "https://x.com/imad_codes",
         company_logo: "/wordpress.png",
         company_name: "Making websites in wordpress and monetizing them with SEO and paid ads",
-        duration: "Feb 2024 - June 2024",
+        duration: "2022 - 2024",
         job_title: "Learning and practicing SEO",
         description: ""
     }
