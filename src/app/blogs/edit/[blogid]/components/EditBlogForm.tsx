@@ -49,7 +49,7 @@ export default function EditBlogForm({ blog }: EditBlogFormProps) {
         setImagePublicId(data.public_id)
         toast.success('Image uploaded successfully')
       }
-    } catch (error) {
+    } catch {
       toast.error('Failed to upload image')
     } finally {
       setIsUploading(false)
@@ -87,7 +87,7 @@ export default function EditBlogForm({ blog }: EditBlogFormProps) {
       } else {
         toast.error(data.message || 'Failed to update blog')
       }
-    } catch (error) {
+    } catch {
       toast.error('An error occurred while updating the blog')
     } finally {
       setIsLoading(false)

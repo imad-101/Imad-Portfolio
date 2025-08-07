@@ -34,7 +34,7 @@ export default function BlogManageList() {
       } else {
         toast.error('Failed to fetch blogs')
       }
-    } catch (error) {
+    } catch {
       toast.error('Error fetching blogs')
     } finally {
       setLoading(false)
@@ -60,7 +60,7 @@ export default function BlogManageList() {
       } else {
         toast.error(data.message || 'Failed to delete blog')
       }
-    } catch (error) {
+    } catch {
       toast.error('Error deleting blog')
     } finally {
       setDeleting(null)

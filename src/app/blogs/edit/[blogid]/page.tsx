@@ -33,12 +33,12 @@ export default async function EditBlogPage({ params }: PageProps) {
         </Suspense>
       </div>
     )
-  } catch (error) {
+  } catch {
     return (
       <div className="w-full mt-40 max-sm:mt-28 px-4 max-w-4xl mx-auto">
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-4">Blog Not Found</h1>
-          <p className="text-gray-600 dark:text-gray-400">The blog post you're trying to edit doesn't exist.</p>
+          <p className="text-gray-600 dark:text-gray-400">The blog post you&apos;re trying to edit doesn&apos;t exist.</p>
         </div>
       </div>
     )

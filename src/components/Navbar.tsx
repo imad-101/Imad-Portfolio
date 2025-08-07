@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Link, Separator, Tooltip } from '@radix-ui/themes';
-import { GitHubLogoIcon, SunIcon, MoonIcon, FileIcon, RowsIcon, LinkedInLogoIcon, CodeIcon, HomeIcon } from '@radix-ui/react-icons';
+import { GitHubLogoIcon, SunIcon, MoonIcon, RowsIcon, CodeIcon, HomeIcon } from '@radix-ui/react-icons';
 import { usePathname } from 'next/navigation';
 import { FaXTwitter } from 'react-icons/fa6';
 import { IoPerson } from "react-icons/io5";
